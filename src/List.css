@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.myNav {
+    display: flex;
+    justify-content: space-around;
+    max-width: 40%;
+    border-bottom: 2px solid blueviolet;
+    /*background-color: brown;*/
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.hovered {
+    list-style: none;
+    /*border: 1px solid yellow;*/
+}
+
+.hovered:hover {
+    background-color: cornflowerblue;
+    /*border-bottom: 1px solid blue;*/
+
+}
+
+.navItem {
+    display: none;
+    position: absolute;
+    /* border: 1px solid green;*/
+}
+
+.hovered:hover .navItem {
+    /*margin-top: 2px;*/
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: transparent;
+    /*border: 1px solid blue;*/
+    text-align: start;
+}
+
+.navItem li:hover {
+    background-color: cornflowerblue;
+}
